@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'HelloWorldApp'
+
+jar{
+	manifest{
+		attributes 'Main-Class':'HelloWorldApp'
+	}
+}
